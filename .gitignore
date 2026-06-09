@@ -1,0 +1,46 @@
+# ============================================================
+# Multi-Agent Research Assistant — .gitignore
+# ============================================================
+
+# --- Secrets ---
+.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# --- Data & Uploads ---
+data/uploads/
+
+# --- Vector Database (persisted index — large binary files) ---
+vectordb/
+
+# --- HuggingFace model cache ---
+.cache/
+
+# --- Streamlit cache ---
+.streamlit/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- macOS ---
+.DS_Store
+
+# --- Jupyter (for future phases) ---
+.ipynb_checkpoints/
+
+# --- Testing ---
+.pytest_cache/
+

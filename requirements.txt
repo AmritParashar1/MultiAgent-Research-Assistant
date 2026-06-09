@@ -1,0 +1,36 @@
+# ============================================================
+# Multi-Agent Research Assistant — Phase 1 Dependencies
+# ============================================================
+# Install with: pip install -r requirements.txt
+# Python >= 3.10 recommended
+
+# --- Core LangChain ecosystem ---
+# Using flexible ranges so pip can resolve a consistent dependency tree.
+# All langchain-* packages must align on the same langchain-core minor series.
+langchain>=0.3.0,<0.4.0
+langchain-community>=0.3.0,<0.4.0
+langchain-google-genai>=2.1.0,<3.0.0   # 2.1+ uses new google-genai SDK
+langchain-huggingface>=0.1.0,<0.2.0   # 0.1.x is compatible with langchain-core 0.3.x
+langchain-chroma>=0.1.0,<0.3.0
+
+# --- Vector Database ---
+chromadb>=0.5.0,<1.0.0
+
+# --- Embeddings (HuggingFace sentence-transformers) ---
+sentence-transformers>=2.2.0,<4.0.0
+
+# --- PDF Processing ---
+# PyMuPDF gives the best results on complex PDFs (tables, columns, multi-column)
+pymupdf>=1.23.0,<2.0.0
+
+# --- LLM Provider (Google Gemini) ---
+# google-generativeai is deprecated; google-genai is the new official SDK
+google-genai>=1.0.0
+
+# --- Frontend ---
+streamlit>=1.35.0,<2.0.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
+tiktoken>=0.7.0
+numpy>=1.26.0
